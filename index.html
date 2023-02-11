@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sorting Visualiser</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="logo"><img src="sv.gif" alt="" /></div>
+		<nav>
+			<div class="naBtn">
+				<button id="new_array">New Array</button>
+			</div>
+			<div class="sb">
+				<label for="speed">Speed</label>
+				<input id="speed" type="range" min="5" max="140" step="1" value="60" />
+			</div>
+			<div class="sb">
+				<label for="noBars">No of Bars</label>
+				<input
+					id="noBars"
+					type="range"
+					min="20"
+					max="100"
+					step="1"
+					value="60"
+				/>
+			</div>
+			<div class="algoBtn">
+				<button id="i">Insertion Sort</button>
+				<button id="b">Bubble Sort</button>
+				<button id="s">Selection Sort</button>
+				<button id="m">Merge Sort</button>
+			</div>
+		</nav>
+		<div id="container"></div>
+		<script src="./js-files/main.js"></script>
+		<script src="./js-files/sorting.js"></script>
+		<script src="./js-files/bubbleSort.js"></script>
+		<script src="./js-files/selectionSort.js"></script>
+		<script src="./js-files/insertionSort.js"></script>
+		<script src="./js-files/mergeSort.js"></script>
+	</body>
+</html>
