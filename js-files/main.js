@@ -34,17 +34,18 @@ delayElement.addEventListener("input", function () {
 
 let noOfBars = document.querySelector("#noBars");
 noOfBars.addEventListener("input", () => {
-	newArray(noOfBars.value);
+	newArray(noOfBars.value, 350);
 });
 
 if (screen.width < 500) {
 	newArray(30, 350);
-	document.getElementById("noBars").value = 30;
+	document.getElementById("noBars").value = 28;
 	document.getElementById("noBars").max = 30;
+	document.getElementById("noBars").min = 5;
 } else {
-	newArray(60, 400);
+	newArray(70, 400);
 	document.getElementById("noBars").value = 60;
 }
 document.getElementById("new_array").addEventListener("click", () => {
-	newArray(noOfBars.value);
+	newArray(noOfBars.value, 350);
 });
